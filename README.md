@@ -30,9 +30,9 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 - This improved training time for a single epoch from 40 mins to <10 mins.
 
 ##### Seq2Seq Training Architecture:
-- The script for training includes cells that can be used to load checkpoints and continue training
-![seq2seq Lucidchart](https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/4aadaed3-6b0c-4665-a98d-92575c859d0c)
 
+![seq2seq Lucidchart](https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/4aadaed3-6b0c-4665-a98d-92575c859d0c)
+- The script for training includes cells that can be used to load checkpoints and continue training
 ##### Inference:
 ###### The inference script can be run from top to bottom in one go.
 - The trained model is loaded into the inference script.
