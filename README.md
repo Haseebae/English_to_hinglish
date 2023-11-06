@@ -23,9 +23,11 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 - The Devanagiri text is then parsed for direct English translations which are then replaced with the English counterparts.
 
 ##### Seq2Seq Training Architecture:
+- The script for training includes cells that can be used to load checkpoints and continue training
 ![seq2seq Lucidchart](https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/4aadaed3-6b0c-4665-a98d-92575c859d0c)
 
 ##### Inference:
+###### The inference script can be run from top to bottom in one go.
 - The trained model is loaded into the inference script.
 - It is set up in such a way that models can be switched out with newer models.
 - The seq2seq model is broken apart into the encoder and decoder.
@@ -34,6 +36,11 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 2. The encoded text is sent to the decoder to give the decoded text.
 3. This text is transliterated to Devanagari Hindi.
 4. The Devanagari Hindi and the decoded Hinglish text is compared to swap relevant text to give the final output.
+
+#### Pending Work:
+- Train the model for more epochs to get reasonable outputs. (Seq2Seq model performance cannot be inferred  merely from precision and loss)
+- Modify the architecture to include beam search which is recommended to use with seq2seq models for increasing performance.
+- Calculate BLEU Score for the actual decoded Hinglish and the ground Truth (This was not yet included as the model has to first be sufficiently trained)
 
 
    
