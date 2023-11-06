@@ -45,6 +45,12 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 - Modify the architecture to include beam search which is recommended to use with seq2seq models for increasing performance.
 - Calculate BLEU Score for the actual decoded Hinglish and the ground Truth (This was not yet included as the model has to first be sufficiently trained)
 
+#### Alternate Approach:
+- Rather than making a model from scratch, Existing models can be finetuned on this dataset.
+- To do this, The Hinglish TOP Dataset would need to completely be transliterated to Devanagari Hindi which is the type of data needed for finetuning existing models.
+- The output from this finetuned model would be very useful and practical but would not match the required output of the assignment.
+- To get the required output specified in the assignment, A hindi to english transliteration model needs to be used, Which can then be used to change it into the required format
+
 
    
 
