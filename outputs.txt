@@ -1,0 +1,13 @@
+INFERENCE:
+
+input:  definitely share you feedback in the comment section 
+decoded_sentence:   kya aaj raat baarish hogi  
+hinglish:  क्या आज रात बारिश होगी
+
+input:  so even if its a big video, I will clearly mention all the products 
+decoded_sentence:   kya aaj raat baarish hogi  
+hinglish:  क्या आज रात बारिश होगी
+
+input:  I was waiting for my bag 
+decoded_sentence:   kya aaj raat baarish hogi  
+hinglish:  क्या आज रात बारिश होगी
