@@ -20,8 +20,11 @@
 - This Model is trained to give similar "Hinglish" outputs which are then transliterated to Devanagari Hindi
 - The Devanagiri text is then parsed for direct English translations which are then replaced with the English counterparts.
 
-##### Seq2Seq Architecture:
+##### Seq2Seq Training Architecture:
 ![seq2seq Lucidchart](https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/4aadaed3-6b0c-4665-a98d-92575c859d0c)
+
+##### Inference:
+- The trained model is 
 
 
    
