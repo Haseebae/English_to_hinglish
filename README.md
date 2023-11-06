@@ -24,6 +24,9 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 
 - This Model is trained to give similar "Hinglish" outputs which are then transliterated to Devanagari Hindi
 - The Devanagiri text is then parsed for direct English translations which are then replaced with the English counterparts.
+- The training for the model was taking too long on my local system and moving to free cloud alternatives wasn't much of an improvement.
+- To combat this, V100 compute instances were rented on GCP VERTEX AI.
+- This improved training time for a single epoch from 40 mins to <10 mins.
 
 ##### Seq2Seq Training Architecture:
 - The script for training includes cells that can be used to load checkpoints and continue training
