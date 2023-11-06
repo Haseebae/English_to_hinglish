@@ -19,6 +19,9 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 - Hinglish TOP Dataset was used to train a Seq2Seq LSTM model with Attention to train this model. (Agarwal, Anmol, et al. "CST5: Data Augmentation for Code-Switched Semantic Parsing." arXiv preprint arXiv:2211.07514 (2022).)
 - Examples:
 - <img width="306" alt="Screenshot 2023-11-06 at 11 12 33 PM" src="https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/9d896989-47b5-41c7-b62e-b780d4e1ac9f">
+- Training Data and Example output:
+- <img width="384" alt="Screenshot 2023-11-07 at 12 22 07 AM" src="https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/01b73998-73a8-4de7-8533-78a126ce784a">
+
 - This Model is trained to give similar "Hinglish" outputs which are then transliterated to Devanagari Hindi
 - The Devanagiri text is then parsed for direct English translations which are then replaced with the English counterparts.
 
