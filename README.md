@@ -1,5 +1,7 @@
 ## English to Hinglish Seq2Seq LSTM with Attention
 
+Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroibv?usp=sharing
+
 - English to Hinglish translation model with relevant code switched output translation (Hindi and English)
 
 - Criteria: 
@@ -29,4 +31,4 @@
 
    
 
-Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroibv?usp=sharing
+
