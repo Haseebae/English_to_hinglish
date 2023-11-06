@@ -26,7 +26,14 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 ![seq2seq Lucidchart](https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/4aadaed3-6b0c-4665-a98d-92575c859d0c)
 
 ##### Inference:
-- The trained model is 
+- The trained model is loaded into the inference script.
+- It is set up in such a way that models can be switched out with newer models.
+- The seq2seq model is broken apart into the encoder and decoder.
+- Working:
+1. The English text is encoded and sent to the encoder
+2. The encoded text is sent to the decoder to give the decoded text.
+3. This text is transliterated to Devanagari Hindi.
+4. The Devanagari Hindi and the decoded Hinglish text is compared to swap relevant text to give the final output.
 
 
    
