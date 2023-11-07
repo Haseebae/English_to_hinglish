@@ -51,12 +51,13 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 
 ##### 1. Seq2Seq LSTM:
 
-##### Training Compute Challenges:
+##### Challenges:
 - Same output regardless of different inputs (Not trained enough even after 70 epochs)
 - Too long to train
-- Training time for a single epoch (20-30 mins on collab, ~10 mins on dedicated compute on GCP) 
+- Training time for a single epoch (20-30 mins on collab, ~10 mins on dedicated compute on GCP)
+< All these challenges were addressed by migrating to the transformer architecture >
 
-##### Seq2Seq Training Architecture:
+##### Seq2Seq LSTM Model Architecture:
 
 ![seq2seq Lucidchart](https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/4aadaed3-6b0c-4665-a98d-92575c859d0c)
 - The script for training includes cells that can be used to load checkpoints and continue training
@@ -78,7 +79,17 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 - Converged to a good model after 30 epochs
 
 - Results from the test set:
+- The test set shows accurate translations and relevant code-mixing.
 < Insert image here >
+
+##### Challenges:
+- Train runtime disconnections. ( So what's new .. )
+- When tested against more complicated sentences, two observations can be noted:
+  1. Complex grammar throws the model off. < This can addressed with more quality data.>
+  2. Some words are not being captured. < This can be addressed by increasing the size of the vocabulary during the vectorization process >
+
+#### Seq2Seq Transformer Model Architecture:
+
 
 
 
