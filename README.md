@@ -34,11 +34,10 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 
 ##### 1. Seq2Seq LSTM:
 
-- This Model is trained to give similar "Hinglish" outputs which are then transliterated to Devanagari Hindi
-- The Devanagiri text is then parsed for direct English translations which are then replaced with the English counterparts.
 ##### Training Compute Challenges:
-- Same output regardless of different inputs (Not trained enough)
+- Same output regardless of different inputs (Not trained enough even after 70 epochs)
 - Too long to train
+- Training time for a single epoch (20-30 mins on collab, ~10 mins on dedicated compute on GCP) 
 
 ##### Seq2Seq Training Architecture:
 
@@ -55,19 +54,15 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 3. This text is transliterated to Devanagari Hindi.
 4. The Devanagari Hindi and the decoded Hinglish text is compared to swap relevant text to give the final output.
 
-##### Seq2Seq Transformer:
+##### 2. Seq2Seq Transformer:
+
+- This model was able to give reasonable and different outputs even after a single epoch
+- Takes 2-5 mins to train a single epoch on Collab
+- Converged to a good model after _ epochs
+
+  #####
 
 
-#### Pending Work:
-- Train the model for more epochs to get reasonable outputs. (Seq2Seq model performance cannot be inferred  merely from precision and loss)
-- Modify the architecture to include beam search which is recommended to use with seq2seq models for increasing performance.
-- Calculate BLEU Score for the actual decoded Hinglish and the ground Truth (This was not yet included as the model has to first be sufficiently trained)
-
-#### Alternate Approach:
-- Rather than making a model from scratch, Existing models can be finetuned on this dataset.
-- To do this, The Hinglish TOP Dataset would need to completely be transliterated to Devanagari Hindi which is the type of data needed for finetuning existing models.
-- The output from this finetuned model would be very useful and practical but would not match the required output of the assignment.
-- To get the required output specified in the assignment, A hindi to english transliteration model needs to be used, Which can then be used to change it into the required format
 
 
    
