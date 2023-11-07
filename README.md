@@ -47,6 +47,10 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 - The vectorization instance should be placed under *english_to_hinglish/Transformer/assets/vectors*
 - NOW RUN THE SCRIPT AND ENJOY
 
+- Transformer test results :
+- ![image](https://github.com/Haseebae/English_to_hinglish/assets/75690804/d96952ab-ee83-4f89-8315-e61f66271b6f)
+
+
 #### MODEL DETAILS AND CHALLENGES
 
 ##### 1. Seq2Seq LSTM:
@@ -76,7 +80,9 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 
 - This model was able to give reasonable and different outputs even after a single epoch
 - Takes 2-5 mins to train a single epoch on Collab
-- Converged to a good model after 30 epochs
+- Converged very early. As such, the drive link contains the model checkpoint from epoch 10, 30 and 50
+- ![image](https://github.com/Haseebae/English_to_hinglish/assets/75690804/b1678650-b313-41a8-add6-7add37aa7555)
+
 
 - Results from the test set:
 - The test set shows accurate translations and relevant code-mixing.
@@ -89,6 +95,10 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
   2. Some words are not being captured. < This can be addressed by increasing the size of the vocabulary during the vectorization process >
 
 #### Seq2Seq Transformer Model Architecture:
+
+#### Pending Work:
+1. Increase vocabulary.
+2. Include numbers and punctuation in the training set to improve the readability of outputs.
 
 
 
