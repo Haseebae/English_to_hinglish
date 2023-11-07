@@ -47,6 +47,8 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 - The vectorization instance should be placed under *english_to_hinglish/Transformer/assets/vectors*
 - NOW RUN THE SCRIPT AND ENJOY
 
+#### MODEL DETAILS AND CHALLENGES
+
 ##### 1. Seq2Seq LSTM:
 
 ##### Training Compute Challenges:
