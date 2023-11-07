@@ -1,0 +1,49 @@
+INFERENCE:
+
+sentence1 = "definitely share you feedback in the comment section"
+sentence2 = "so even if its a big video, I will clearly mention all the products"
+sentence3 = "I was waiting for my bag"
+
+1. Seq2Seq Transformer
+
+- Epoch 1:
+
+1. Sentence1:
+input:  definitely share you feedback in the comment section 
+decoded_sentence:  [start] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] end  [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] 
+hinglish:  [स्टार्ट] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] end [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक]
+
+2. Sentence2:
+input:  so even if its a big video, I will clearly mention all the products 
+decoded_sentence:  [start] ye bahut video message hai ki i will be a new york me bhi nahi hoga end  end end 
+hinglish:  [स्टार्ट] ये बहुत video message है की i will be a new यॉर्क me भी नहीं होगा end end end
+
+3. Sentence3:
+input:  I was waiting for my bag 
+decoded_sentence:  [start] mujhe mere phone ke liye mere [UNK] hai end  kar kar [UNK] [UNK] end kar end kar end kar 
+hinglish:  [स्टार्ट] मुझे mere phone के लिए mere [उनक] है end कर कर [उनक] [उनक] end कर end कर end कर
+
+
+2. Seq2Seq LSTM with attention
+
+- Epoch 70:
+
+1. Sentence1:
+input:  definitely share you feedback in the comment section 
+decoded_sentence:   kya aap mujhe bata sakte hai ki 4th march ko mausam kaisa rahega  
+hinglish:  क्या आप मुझे बता सकते है की ४थ मार्च को मौसम कैसा रहेगा
+
+2. Sentence2:
+input:  so even if its a big video, I will clearly mention all the products 
+decoded_sentence:   kya aap mujhe bata sakte hai ki 4th march ko mausam kaisa rahega  
+hinglish:  क्या आप मुझे बता सकते है की ४थ मार्च को मौसम कैसा रहेगा
+
+3. Sentence3:
+input:  I was waiting for my bag 
+decoded_sentence:   kya aap mujhe bata sakte hai ki 4th march ko mausam kaisa rahega  
+hinglish:  क्या आप मुझे बता सकते है की ४थ मार्च को मौसम कैसा रहेगा
+
+
+
+
+
