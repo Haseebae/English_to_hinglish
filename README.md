@@ -30,7 +30,22 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 2. Seq2Seq Transformer
 
 - First, the LSTM was trained. This model introduced numerous challenges mentioned in detail below.
-- To combat this, a transformer model was used. Details below.
+- To combat this, a transformer model was used. Details about this model and how to run the scripts for this are mentioned below.
+
+#### How to run the transformer model:
+
+1. Training:
+- The training script has no dependencies.
+- The dataset is also loaded from Hugging Face.
+- The dependencies are listed in the first cell
+- 
+2. Inference:
+- Download the provided model from the drive link under *Seq2Seq Transformer/models*
+- The model should be placed in *english_to_hinglish/Transformer/models*
+- The script looks for *t_50.h5* by default. If any other model is used. change the model name in the script.
+- Download the vectorization instances for English and Hinglish from the dive link under *Seq2Seq Transformer/assets/vectors*
+- The vectorization instance should be placed under *english_to_hinglish/Transformer/assets/vectors*
+- NOW RUN THE SCRIPT AND ENJOY
 
 ##### 1. Seq2Seq LSTM:
 
@@ -46,7 +61,7 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 ##### Inference:
 ###### The inference script can be run from top to bottom in one go.
 - The trained model is loaded into the inference script.
-- It is set up in such a way that models can be switched out with newer models.
+- It is set up so that models can be switched out with newer models.
 - The seq2seq model is broken apart into the encoder and decoder.
 - Working:
 1. The English text is encoded and sent to the encoder
@@ -54,13 +69,16 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 3. This text is transliterated to Devanagari Hindi.
 4. The Devanagari Hindi and the decoded Hinglish text is compared to swap relevant text to give the final output.
 
-##### 2. Seq2Seq Transformer:
+#### 2. Seq2Seq Transformer:
 
 - This model was able to give reasonable and different outputs even after a single epoch
 - Takes 2-5 mins to train a single epoch on Collab
-- Converged to a good model after _ epochs
+- Converged to a good model after 30 epochs
 
-  #####
+- Results from the test set:
+< Insert image here >
+
+
 
 
 
