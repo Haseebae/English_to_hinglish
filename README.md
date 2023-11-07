@@ -32,7 +32,7 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 - First, the LSTM was trained. This model introduced numerous challenges mentioned in detail below.
 - To combat this, a transformer model was used. Details about this model and how to run the scripts for this are mentioned below.
 
-#### How to run the transformer model:
+### How to run the transformer model:
 
 1. Training:
 - The training script has no dependencies.
