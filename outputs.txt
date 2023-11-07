@@ -6,22 +6,22 @@ sentence3 = "I was waiting for my bag"
 
 1. Seq2Seq Transformer
 
-- Epoch 1:
+- Epoch 30:
 
 1. Sentence1:
 input:  definitely share you feedback in the comment section 
-decoded_sentence:  [start] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] end  [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] 
-hinglish:  [स्टार्ट] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] end [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] [उनक]
+decoded_sentence:   definitely [UNK] aap ki you ki [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] hai  
+hinglish:  definitely [उनक] आप की you की [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] है
 
 2. Sentence2:
 input:  so even if its a big video, I will clearly mention all the products 
-decoded_sentence:  [start] ye bahut video message hai ki i will be a new york me bhi nahi hoga end  end end 
-hinglish:  [स्टार्ट] ये बहुत video message है की i will be a new यॉर्क me भी नहीं होगा end end end
+decoded_sentence:   to wo video hai agar mai ek big karen jo ke saarey [UNK] ki kuch k liye [UNK] tha  
+hinglish:  to वो video है अगर मई एक big करें जो के सारे [उनक] की कुछ क लिए [उनक] था
 
 3. Sentence3:
 input:  I was waiting for my bag 
-decoded_sentence:  [start] mujhe mere phone ke liye mere [UNK] hai end  kar kar [UNK] [UNK] end kar end kar end kar 
-hinglish:  [स्टार्ट] मुझे mere phone के लिए mere [उनक] है end कर कर [उनक] [उनक] end कर end कर end कर
+decoded_sentence:   me apne bag ke liye waiting kar raha tha  
+hinglish:  me अपने bag के लिए वेटिंग कर रहा था
 
 
 2. Seq2Seq LSTM with attention
