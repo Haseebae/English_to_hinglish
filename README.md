@@ -16,11 +16,14 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 
 ### Approach:
 - findnitai/english-to-hinglish Dataset from hugging face contains English to Hinglish translations. These translations are said in casual tones.
+- Examples:
+- <img width="306" alt="Screenshot 2023-11-06 at 11 12 33 PM" src="https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/9d896989-47b5-41c7-b62e-b780d4e1ac9f">
 - This dataset will be used to make a translation model
 - The output from this model is passed to a transliteration package to convert Hinglish to Hindi(Devanagari).
 - The Hindi and Hinglish are compared to identify and replace Hindi words that resemble English words.
-- Examples:
-- <img width="306" alt="Screenshot 2023-11-06 at 11 12 33 PM" src="https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/9d896989-47b5-41c7-b62e-b780d4e1ac9f">
+
+- Training Data and Example output:
+- <img width="384" alt="Screenshot 2023-11-07 at 12 22 07 AM" src="https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/01b73998-73a8-4de7-8533-78a126ce784a">
 
 #### MODELS USED
 1. Seq2Seq LSTM
@@ -30,9 +33,6 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 - To combat this, a transformer model was used. Details below.
 
 ##### 1. Seq2Seq LSTM:
-
-- Training Data and Example output:
-- <img width="384" alt="Screenshot 2023-11-07 at 12 22 07 AM" src="https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/01b73998-73a8-4de7-8533-78a126ce784a">
 
 - This Model is trained to give similar "Hinglish" outputs which are then transliterated to Devanagari Hindi
 - The Devanagiri text is then parsed for direct English translations which are then replaced with the English counterparts.
