@@ -80,7 +80,7 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 
 - This model was able to give reasonable and different outputs even after a single epoch
 - Takes 2-5 mins to train a single epoch on Collab
-- Converged very early. As such, the drive link contains the model checkpoint from epoch 10, 30 and 50
+- Converged very early. Due to visible overfitting, the drive link contains the model checkpoint from epoch 10, 30 and 50
 - ![image](https://github.com/Haseebae/English_to_hinglish/assets/75690804/b1678650-b313-41a8-add6-7add37aa7555)
 
 
