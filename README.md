@@ -1,4 +1,4 @@
-## English to Hinglish Seq2Seq LSTM with Attention
+# English to Hinglish 
 
 Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroibv?usp=sharing
 
@@ -9,25 +9,36 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 2. Easily Interpretable (should resemble a casual speaker)
 3. relevant "code-mixing" (English words within the translation)
 
-#### Existing methodologies:
+### Existing methodologies:
 - For translation accuracy, a pre-trained English-to-Hindi model can be inferred.
 - The translation and input can then be compared and appropriately parsed to replace Hindi words with English counterparts.
-##### Future work here would involve fine-tuning the model and improving parsing methods to improve interpretability
+- This work would primarily focus on better parsing mechanisms but it will never capture a casual tone. (Which is what I tried to address)
 
-#### Approach:
-- This approach focuses on tackling the casual mixed Hindi tone from the ground up.
-- Hinglish TOP Dataset was used to train a Seq2Seq LSTM model with Attention to train this model. (Agarwal, Anmol, et al. "CST5: Data Augmentation for Code-Switched Semantic Parsing." arXiv preprint arXiv:2211.07514 (2022).)
+### Approach:
+- findnitai/english-to-hinglish Dataset from hugging face contains English to Hinglish translations. These translations are said in casual tones.
+- This dataset will be used to make a translation model
+- The output from this model is passed to a transliteration package to convert Hinglish to Hindi(Devanagari).
+- The Hindi and Hinglish are compared to identify and replace Hindi words that resemble English words.
 - Examples:
 - <img width="306" alt="Screenshot 2023-11-06 at 11 12 33 PM" src="https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/9d896989-47b5-41c7-b62e-b780d4e1ac9f">
+
+#### MODELS USED
+1. Seq2Seq LSTM
+2. Seq2Seq Transformer
+
+- First, the LSTM was trained. This model introduced numerous challenges mentioned in detail below.
+- To combat this, a transformer model was used. Details below.
+
+##### 1. Seq2Seq LSTM:
+
 - Training Data and Example output:
 - <img width="384" alt="Screenshot 2023-11-07 at 12 22 07 AM" src="https://github.com/Haseebae/English_to_hinglish_LSTM/assets/75690804/01b73998-73a8-4de7-8533-78a126ce784a">
 
 - This Model is trained to give similar "Hinglish" outputs which are then transliterated to Devanagari Hindi
 - The Devanagiri text is then parsed for direct English translations which are then replaced with the English counterparts.
 ##### Training Compute Challenges:
-- The training for the model was taking too long on my local system and moving to free cloud alternatives wasn't much of an improvement.
-- To combat this, V100 compute instances were rented on GCP VERTEX AI.
-- This improved training time for a single epoch from 40 mins to <10 mins.
+- Same output regardless of different inputs (Not trained enough)
+- Too long to train
 
 ##### Seq2Seq Training Architecture:
 
@@ -43,6 +54,9 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 2. The encoded text is sent to the decoder to give the decoded text.
 3. This text is transliterated to Devanagari Hindi.
 4. The Devanagari Hindi and the decoded Hinglish text is compared to swap relevant text to give the final output.
+
+##### Seq2Seq Transformer:
+
 
 #### Pending Work:
 - Train the model for more epochs to get reasonable outputs. (Seq2Seq model performance cannot be inferred  merely from precision and loss)
