@@ -1,5 +1,22 @@
 INFERENCE:
 
+- Epoch 70:
+
+1. Sentence1:
+input:  definitely share you feedback in the comment section 
+decoded_sentence:   kya aap mujhe bata sakte hai ki 4th march ko mausam kaisa rahega  
+hinglish:  क्या आप मुझे बता सकते है की ४थ मार्च को मौसम कैसा रहेगा
+
+2. Sentence2:
+input:  so even if its a big video, I will clearly mention all the products 
+decoded_sentence:   kya aap mujhe bata sakte hai ki 4th march ko mausam kaisa rahega  
+hinglish:  क्या आप मुझे बता सकते है की ४थ मार्च को मौसम कैसा रहेगा
+
+3. Sentence3:
+input:  I was waiting for my bag 
+decoded_sentence:   kya aap mujhe bata sakte hai ki 4th march ko mausam kaisa rahega  
+hinglish:  क्या आप मुझे बता सकते है की ४थ मार्च को मौसम कैसा रहेगा
+
 - Epoch 30:
 
 1. Sentence1:
@@ -17,20 +34,5 @@ input:  I was waiting for my bag
 decoded_sentence:   kya aaj raat baarish hogi  
 hinglish:  क्या आज रात बारिश होगी
 
-- Epoch 70:
 
-1. Sentence1:
-input:  definitely share you feedback in the comment section 
-decoded_sentence:   kya aap mujhe bata sakte hai ki 4th march ko mausam kaisa rahega  
-hinglish:  क्या आप मुझे बता सकते है की ४थ मार्च को मौसम कैसा रहेगा
-
-2. Sentence2:
-input:  so even if its a big video, I will clearly mention all the products 
-decoded_sentence:   kya aap mujhe bata sakte hai ki 4th march ko mausam kaisa rahega  
-hinglish:  क्या आप मुझे बता सकते है की ४थ मार्च को मौसम कैसा रहेगा
-
-3. Sentence3:
-input:  I was waiting for my bag 
-decoded_sentence:   kya aap mujhe bata sakte hai ki 4th march ko mausam kaisa rahega  
-hinglish:  क्या आप मुझे बता सकते है की ४थ मार्च को मौसम कैसा रहेगा
 
