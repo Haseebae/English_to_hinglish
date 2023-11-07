@@ -6,10 +6,27 @@ sentence3 = "I was waiting for my bag"
 
 1. Seq2Seq Transformer
 
-- Epoch 30:
+- Epoch 10:
 
 1. Sentence1:
-input:  definitely share you feedback in the comment section 
+input:  definitely share your feedback in the comment section 
+decoded_sentence:   definitely [UNK] [UNK] [UNK] ho  
+hinglish:  definitely [उनक] [उनक] [उनक] हो
+
+2. Sentence2:
+input:  so even if its a big video, I will clearly mention all the products 
+decoded_sentence:   to bhi agar mai big video mein [UNK] karta hoon  
+hinglish:  to भी अगर मई big video में [उनक] करता हूँ
+
+3. Sentence3:
+input:  I was waiting for my bag 
+decoded_sentence:   mai apne bag ke liye raha tha  
+hinglish:  मई अपने bag के लिए रहा था
+
+- Epoch 31:
+
+1. Sentence1:
+input:  definitely share your feedback in the comment section 
 decoded_sentence:   definitely [UNK] aap ki you ki [UNK] [UNK] [UNK] [UNK] [UNK] [UNK] hai  
 hinglish:  definitely [उनक] आप की you की [उनक] [उनक] [उनक] [उनक] [उनक] [उनक] है
 
@@ -22,6 +39,23 @@ hinglish:  to वो video है अगर मई एक big करें ज�
 input:  I was waiting for my bag 
 decoded_sentence:   me apne bag ke liye waiting kar raha tha  
 hinglish:  me अपने bag के लिए वेटिंग कर रहा था
+
+- Epoch 50:
+
+1. Sentence1:
+input:  definitely share your feedback in the comment section 
+decoded_sentence:   definitely [UNK] [UNK] [UNK] [UNK] mei apne interesting save hai  
+hinglish:  definitely [उनक] [उनक] [उनक] [उनक] में अपने interesting save है
+
+2. Sentence2:
+input:  so even if its a big video, I will clearly mention all the products 
+decoded_sentence:   so ye [UNK] hai ki if maine sabhi video dekhne me saare input  
+hinglish:  so ये [उनक] है की if मैंने सभी video देखने me सारे इनपुट
+
+3. Sentence3:
+input:  I was waiting for my bag 
+decoded_sentence:   me apne country ke liye waiting kar raha hu  
+hinglish:  me अपने country के लिए वेटिंग कर रहा हु
 
 
 2. Seq2Seq LSTM with attention
