@@ -35,10 +35,9 @@ Assets : https://drive.google.com/drive/folders/1uIgZXHYqmdxCciT-LwrPy9mFVIRroib
 ### How to run the transformer model:
 
 1. Training:
-- The training script has no dependencies.
-- The dataset is also loaded from Hugging Face.
+- The dataset is loaded from Hugging Face.
 - The dependencies are listed in the first cell
-- 
+
 2. Inference:
 - Download the provided model from the drive link under *Seq2Seq Transformer/models*
 - The model should be placed in *english_to_hinglish/Transformer/models*
